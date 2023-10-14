@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        containerRegistry: 'Art_Docker'
+        containerRegistry: 'alienacr'
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         repository: $(repoName)
